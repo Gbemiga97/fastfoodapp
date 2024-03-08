@@ -13,7 +13,7 @@ const foodItems = [
         name: 'Cheezy Pizza',
         price: '13.40',
         ingredients: 'crust, pepperoni, sausage',
-        desc: 'A mouthwatering pizza is a culinary wonder that delight your senses and satisfies your hunger.',
+        desc: 'A mouthwatering pizza is a culinary wonder that delight your senses and satisfies your hunger. The crispy crust is the foundation of this masterpiece, topped with a tangy tomato sauce that perfectly balances the flavors',
         img: '../assets/images/pizza.png'
     },
     {

@@ -54,30 +54,61 @@ export default function FoodDetailsScreen(props) {
                 animation='slideInDown'
                 style={tw`flex- items-center gap-y-2`}>
                     <Image source={'../assets/images/calories.png'} style={tw`h-6 w-6`} />
-                    <Text>130 cal</Text>
+                    <Text style={tw`font-semibold text-gray-700`}>130 cal</Text>
                 </Animatable.View>
                 <Animatable.View 
                 delay={280}
                 animation='slideInDown'
                 style={tw`flex- items-center gap-y-2`}>
                     <Image source={'../assets/images/clock.png'} style={tw`h-6 w-6`} />
-                    <Text>15-20 min</Text>
+                    <Text style={tw`font-semibold text-gray-700`}>15-20 min</Text>
                 </Animatable.View>
                 <Animatable.View 
                 delay={380}
                 animation='slideInDown'
                 style={tw`flex- items-center gap-y-2`}>
-                    <Image source={'../assets/images/favorite.png'} style={tw`h-8 w-8`} />
-                    <Text>4.6 votes</Text>
+                    <Image source={'../assets/images/favorite.png'} style={tw`h-9 w-9`} />
+                    <Text style={tw`font-semibold text-gray-700`}>4.6 votes</Text>
                 </Animatable.View>
                 <Animatable.View 
                 delay={480}
                 animation='slideInDown'
                 style={tw`flex- items-center gap-y-2`}>
-                    <Image source={'../assets/images/gram.png'} style={tw`h-8 w-8`} />
-                    <Text>350 g</Text>
+                    <Image source={'../assets/images/gram.png'} style={tw`h-10 w-10`} />
+                    <Text style={tw`font-semibold text-gray-700`}>350 g</Text>
                 </Animatable.View>
             </View>
+            <View style={tw`mx-4 mt-6 gap-y-3 h-60`}>
+                <Animatable.View
+                animation="slideInUp"
+                style={tw`text-3xl font-semibold text-gray-800`}>
+                    Description
+                </Animatable.View>
+                <Animatable.Text
+                animation="slideInUp"
+                delay={100}
+                style={tw`text-gray-600 tracking-wider`}>
+                   <Text>
+                   {desc}
+                   </Text>
+                </Animatable.Text>
+            </View>
+             
+             {/* add to cart button */}
+             <View style={tw`mx-4 flex-row justify-between items-center`}>
+                <Animatable.Text
+                animation='slideInLeft'
+                style={tw`text-3xl font-semibold text-gray-800`}>
+                    ${price}
+                </Animatable.Text>
+             <Animatable.View
+             animation='slideInRight'
+             >
+                <TouchableOpacity style={tw`bg-gray-800 p-4 px-14 rounded-2xl`}>
+                    <Text style={tw`text-white text-xl font-semibold`}>Add to cart</Text>
+                </TouchableOpacity>
+             </Animatable.View>
+             </View>
         </SafeAreaView>
     </View>
   )
